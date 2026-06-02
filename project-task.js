@@ -76,8 +76,8 @@ const combineTasks = todos.filter((todo) => !todo.completed).sort((a,b) => a.pri
   // 🧪 Console Test Your Work
   // ============================================
   
-  console.log("Incomplete Tasks:", JSON.stringify(imcompletedTasks,null,2));
-  console.log("Sorted by Priority:", JSON.stringify(sortTasks,null, 2));
-  console.log("All Tasks Completed:", JSON.stringify(mapTasks,null, 2));
-  console.log("Sorted Incomplete Tasks:", JSON.stringify(combineTasks,null,2));
+  console.log("Incomplete Tasks:", ...imcompletedTasks);
+  console.log("Sorted by Priority:", ...sortTasks);
+  console.log("All Tasks Completed:", ...mapTasks);
+  console.log("Sorted Incomplete Tasks:", ...combineTasks);
   
