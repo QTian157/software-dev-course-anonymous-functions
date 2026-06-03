@@ -57,6 +57,7 @@ const sortTasks = todos.sort((a, b) => a.priority - b.priority );
   3. Use method chaining to perform both steps together.
   */
 const combineTasks = todos.filter((todo) => !todo.completed).sort((a,b) => a.priority-b.priority);
+
   /*
   🔹 Task 4: Mark All Tasks as Completed
   
@@ -66,11 +67,12 @@ const combineTasks = todos.filter((todo) => !todo.completed).sort((a,b) => a.pri
   3. Change the `completed` property to `true` for every task.
   */
 
-  const mapTasks = todos.map((todo) => {
-    return {
-      ...todo, 
-      completed: true};
-    });
+  // const mapTasks = todos.map((todo) => {
+  //   return {
+  //     ...todo, 
+  //     completed: true};
+  //   });
+  const mapTasks = todos.map((todo) => todo.completed = true)
   
   // ============================================
   // 🧪 Console Test Your Work
