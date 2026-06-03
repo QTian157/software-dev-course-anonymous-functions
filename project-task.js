@@ -74,6 +74,10 @@ const combineTasks = todos.filter((todo) => !todo.completed).sort((a,b) => a.pri
   //   });
   const mapTasks = todos.map((todo) => todo.completed = true)
   
+  // test in class
+  const nameTasks = todos.map((todo) => todo.task + ",")
+  console.log("Tasks:", ...nameTasks);
+
   // ============================================
   // 🧪 Console Test Your Work
   // ============================================
@@ -82,4 +86,6 @@ const combineTasks = todos.filter((todo) => !todo.completed).sort((a,b) => a.pri
   console.log("Sorted by Priority:", ...sortTasks);
   console.log("All Tasks Completed:", ...mapTasks);
   console.log("Sorted Incomplete Tasks:", ...combineTasks);
+
+
   
